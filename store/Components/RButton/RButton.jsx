@@ -11,7 +11,6 @@ function RButton({ externalStyles, text, onPress }) {
         testID="RButton"
       >
         <Text style={[externalStyles?.text, styles.text]}>{text}</Text>
-        <Text style={[externalStyles?.text, styles.text]}>{text}</Text>
       </Pressable>
     </View>
   );

@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RButton Component renders correctly 1`] = `
+<View
+  style={
+    [
+      undefined,
+      {
+        "backgroundColor": "#9b9898",
+        "borderRadius": 10,
+        "elevation": 4,
+        "overflow": "hidden",
+        "width": "100%",
+      },
+    ]
+  }
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      [
+        undefined,
+        {
+          "alignItems": "center",
+          "borderRadius": 10,
+          "justifyContent": "center",
+          "overflow": "hidden",
+          "padding": 10,
+          "width": "100%",
+        },
+      ]
+    }
+    testID="RButton"
+  >
+    <Text
+      style={
+        [
+          undefined,
+          {
+            "color": "#1d1d1d",
+            "fontSize": 32,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;

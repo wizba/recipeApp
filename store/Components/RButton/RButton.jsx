@@ -10,6 +10,7 @@ function RButton({ externalStyles, text, onPress }) {
         android_ripple={{ color: '#dddddd' }}
         testID="RButton"
       >
+        
         <Text style={[externalStyles?.text, styles.text]}>{text}</Text>
       </Pressable>
     </View>

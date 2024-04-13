@@ -26,7 +26,12 @@ function WelcomeScreen({ navigation }) {
               easily
             </Text>
             <View style={styles.RbuttonContainer}>
-              <RButton text={"Get Started"} onPress={() => navigation.navigate("Home")} />
+              <RButton
+                externalStyles={{container: styles.buttonContainer}}
+                onPress={() => navigation.navigate("Home")}
+              >
+                <Text style={styles.buttonText}>Get Started</Text>
+              </RButton>
             </View>
           </View>
         </LinearGradient>
@@ -68,7 +73,18 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   content: {
-   backgroundColor: "rgba(0,0,0,0.8)",
-   padding: 30,
+    backgroundColor: "rgba(0,0,0,0.8)",
+    padding: 30,
+  },
+  buttonContainer: {
+    backgroundColor: "#9b9898",
+    width: "100%",
+    borderRadius: 10,
+    overflow: "hidden",
+    elevation: 4,
+  },
+  buttonText: {
+    fontSize: 32,
+    color: "#1d1d1d",
   }
 });

@@ -31,13 +31,13 @@ describe('FETCH RECIPES', () => {
     it('eventually dispatches the FETCH_RECIPES action', async () => {
         mockAxios.onGet().replyOnce(200, fakeRecipeData);
         
-        const searchTerm = 'chicken';
+        const searchTerm = 'fish';
         const from = 0;
         const to = 10;
 
         await store?.dispatch(fetchRecipies({ searchTerm, from, to }));
         const state = store.getState().recipies;
-
+       
         expect(state.loading).toBe(false);
         expect(state.recipies).toEqual(fakeRecipeData);
         expect(state.error).toBeNull();

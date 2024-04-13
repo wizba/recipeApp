@@ -10,12 +10,19 @@ const initialState = {
 export const fetchRecipies = createAsyncThunk(
     "recipies/fetchRecipies",
     async ({searchTerm,from,to}, { rejectWithValue }) => {
+        
         try {
             const response = await axios.get(`https://api.edamam.com/search?q=${searchTerm}&app_id=${process.env.APP_ID}&app_key=${process.env.API_KEY}&from=${from}&to=${to}`);
+            response.data.hits = response.data.hits.map((recipe) => {
+                return {
+                    id: nanoid(),
+                    ...recipe.recipe
+                };
+            });
+            
             return response.data;
         } catch (error) {
             return rejectWithValue(error.response.data); 
-            
         }
     }
 );
@@ -31,7 +38,6 @@ export const recipiesSlice = createSlice({
                 state.error = null;
             })
             .addCase(fetchRecipies.fulfilled, (state, action) => {
-                console.log(action.payload);
                 state.loading = false;
                 state.recipies = action.payload;
             })

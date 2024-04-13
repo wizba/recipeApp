@@ -6,6 +6,7 @@ export const fakeRecipeData = {
     hits: [
         {
             recipe: {
+            
                 label: 'Chicken',
                 image: 'https://www.edamam.com/web-img/79/7965308d1f067803810425909960351b.jpg',
                 source: 'Food Network',

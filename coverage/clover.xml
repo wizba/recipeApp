@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1712681324102" clover="3.2.0">
+  <project timestamp="1712681324102" name="All files">
+    <metrics statements="17" coveredstatements="17" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="6" elements="25" coveredelements="25" complexity="0" loc="17" ncloc="17" packages="2" files="2" classes="2"/>
+    <package name="store">
+      <metrics statements="16" coveredstatements="16" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="6"/>
+      <file name="recipeslice.js" path="C:\Users\User\Desktop\react-native-projects\recipeFinder\store\recipeslice.js">
+        <metrics statements="16" coveredstatements="16" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="6"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="38" count="2" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="46" count="1" type="cond" truecount="2" falsecount="0"/>
+      </file>
+    </package>
+    <package name="store.tests">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="storeMockData.js" path="C:\Users\User\Desktop\react-native-projects\recipeFinder\store\tests\storeMockData.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
